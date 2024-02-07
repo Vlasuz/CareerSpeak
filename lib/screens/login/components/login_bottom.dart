@@ -47,7 +47,9 @@ class LoginBottom extends StatelessWidget {
                 ),
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, '/registration_language');
+                },
                 style: ButtonStyle(
                   padding: MaterialStateProperty.all(
                       EdgeInsets.symmetric(vertical: 0.0, horizontal: 0)),

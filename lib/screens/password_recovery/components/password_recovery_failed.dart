@@ -5,12 +5,15 @@ import 'package:flutter_svg/flutter_svg.dart';
 void PasswordRecoveryFailed(BuildContext context) {
   showModalBottomSheet(
     context: context,
+    backgroundColor: Colors.transparent,
+    // isScrollControlled: true,
     builder: (BuildContext context) {
       return Container(
         height: 388.0,
         decoration: BoxDecoration(
-            color: Color(0xFFF2F3FA),
-            borderRadius: BorderRadius.circular(10.0)),
+          color: Color(0xFFF2F3FA),
+          borderRadius: BorderRadius.circular(25.0),
+        ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
