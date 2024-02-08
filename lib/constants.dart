@@ -7,6 +7,7 @@ const cWhite = Color(0xFFFFFFFF);
 const cOrange = Color(0xFFFF8733);
 const cBrown = Color(0xFF793708);
 const cRed = Color(0xFFFD1111);
+const cGreen = Color(0xFF2CB543);
 
 class LanguagesList {
   final String title;
@@ -15,3 +16,15 @@ class LanguagesList {
   LanguagesList({required this.title, required this.icon});
 }
 
+class ProfessionList {
+  final String title;
+  final Image image;
+
+  ProfessionList({required this.title, required this.image});
+}
+
+class LevelList {
+  final String title;
+
+  LevelList({required this.title});
+}

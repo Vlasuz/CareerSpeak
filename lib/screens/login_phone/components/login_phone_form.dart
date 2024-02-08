@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:career_speak/components/input.dart';
 import 'package:career_speak/constants.dart';
 import 'package:career_speak/screens/login/components/login_by.dart';
+import 'package:career_speak/screens/login_phone/components/login_phone_code.dart';
 import 'package:career_speak/screens/login_phone/components/login_phone_timer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -61,25 +62,7 @@ class _LoginPhoneFormState extends State<LoginPhoneForm> {
         Container(
           width: 242.0,
           height: 56.0,
-          child: PinFieldAutoFill(
-            currentCode: '',
-            onCodeSubmitted: (c) {
-              setState(() {
-                inputPhone = c ?? ''; // Обновляем состояние приложения в ответ на событие
-              });
-            },
-            onCodeChanged: (c) {
-              print('$c');
-              // Здесь не вызываем setState(), чтобы избежать ошибки
-            },
-            codeLength: 5,
-            decoration: BoxLooseDecoration(
-              textStyle: TextStyle(color: Color(0xFF4E4E4E), fontSize: 16.0),
-              strokeColorBuilder: FixedColorBuilder(Colors.transparent),
-              gapSpace: 8.0,
-              bgColorBuilder: FixedColorBuilder(Colors.white),
-            ),
-          ),
+          child: LoginPhoneCode(),
         ),
         SizedBox(
           height: 8.0,
