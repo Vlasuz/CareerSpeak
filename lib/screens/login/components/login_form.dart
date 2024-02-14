@@ -91,6 +91,8 @@ class _LoginFormState extends State<LoginForm> {
                 setState(() {
                   isError = true;
                 });
+              } else {
+                Navigator.pushNamed(context, '/profile');
               }
             },
             style: ButtonStyle(

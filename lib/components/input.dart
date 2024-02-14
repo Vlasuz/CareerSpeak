@@ -11,6 +11,7 @@ class Input extends StatefulWidget {
     this.isPassword = false,
     this.isError = false,
     this.controller,
+    this.onTap = null,
   }) : super(key: key);
 
   final String placeholder;
@@ -19,6 +20,7 @@ class Input extends StatefulWidget {
   final bool isPassword;
   final bool isError;
   final controller;
+  final onTap;
 
   @override
   State<Input> createState() => _InputState();
@@ -54,6 +56,7 @@ class _InputState extends State<Input> {
                   _isFieldEmpty = value.isEmpty;
                 });
               },
+              onTap: widget.onTap,
               decoration: InputDecoration(
                 labelText: _isFieldEmpty ? widget.placeholder : '',
                 contentPadding: EdgeInsets.symmetric(vertical: 7.0),

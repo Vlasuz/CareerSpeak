@@ -93,21 +93,9 @@ class _LoginPhoneFormState extends State<LoginPhoneForm> {
           height: 56.0,
           child: TextButton(
             onPressed: () {
-              // setState(() {
-              //   isError = false;
-              // });
-              // if (inputEmail.isEmpty || inputPassword.isEmpty) return;
-              //
-              // print('login');
-              // print('Email: $inputEmail');
-              // print('Pass: $inputPassword');
-              //
-              // if (inputEmail != 'asd@asd.asd' || inputPassword != '123') {
-              //   setState(() {
-              //     isError = true;
-              //   });
-              // }
-              print('Go to profile');
+              if(inputPhone.length != 17) return;
+
+              Navigator.pushNamed(context, '/profile');
             },
             style: ButtonStyle(
               padding: MaterialStateProperty.all(

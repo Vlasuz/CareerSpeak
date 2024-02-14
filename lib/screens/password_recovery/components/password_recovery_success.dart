@@ -25,7 +25,7 @@ void PasswordRecoverySuccess(BuildContext context) {
                 padding: EdgeInsets.fromLTRB(15.0, 50.0, 15.0, 0),
                 child: Column(
                   children: [
-                    SvgPicture.asset('assets/images/popup/mail.svg'),
+                    SvgPicture.asset('assets/images/popup/girl_with_balloon.svg'),
                     Text(
                       'Успішно!',
                       style: TextStyle(
