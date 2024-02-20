@@ -52,7 +52,7 @@ class _LoginFormState extends State<LoginForm> {
         SizedBox(height: 26.0),
         Input(
           placeholder: 'Пароль',
-          icon: isError ? SvgPicture.asset('assets/images/lock_red.svg') : SvgPicture.asset('assets/images/lock.svg'),
+          icon: isError ? SvgPicture.asset('assets/images/lock_red.svg') : SvgPicture.asset('assets/images/lock_orange.svg'),
           setValue: (value) {
             setState(() {
               inputPassword = value;

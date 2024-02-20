@@ -169,7 +169,7 @@ class _RegistrationInfoState extends State<RegistrationInfo> {
                                 isError: isErrorPassword,
                                 isPassword: true,
                                 icon:
-                                    SvgPicture.asset('assets/images/lock.svg'),
+                                    SvgPicture.asset('assets/images/lock_orange.svg'),
                                 setValue: (value) {
                                   setState(() {
                                     inputPassword = value;
@@ -184,7 +184,7 @@ class _RegistrationInfoState extends State<RegistrationInfo> {
                                 isError: isErrorPassword,
                                 isPassword: true,
                                 icon:
-                                    SvgPicture.asset('assets/images/lock.svg'),
+                                    SvgPicture.asset('assets/images/lock_orange.svg'),
                                 setValue: (value) {
                                   setState(() {
                                     inputPasswordRepeat = value;

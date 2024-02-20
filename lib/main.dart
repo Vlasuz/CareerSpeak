@@ -1,6 +1,8 @@
+import 'package:career_speak/screens/education/education.dart';
 import 'package:career_speak/screens/forgot_password/forgot_password.dart';
 import 'package:career_speak/screens/login/login.dart';
 import 'package:career_speak/screens/login_phone/login_phone.dart';
+import 'package:career_speak/screens/notifications/notifications.dart';
 import 'package:career_speak/screens/password_recovery/password_recovery.dart';
 import 'package:career_speak/screens/profile/components/profile_change_password.dart';
 import 'package:career_speak/screens/profile/components/profile_edit.dart';
@@ -37,10 +39,12 @@ class _MainScreenState extends State<MainScreen> {
         '/registration_info': (context) => const RegistrationInfo(),
         '/registration_profession': (context) => const RegistrationProfession(),
         '/registration_schedule': (context) => const RegistrationSchedule(),
+        '/education': (context) => const Education(),
         '/profile': (context) => const Profile(),
         '/profile_edit': (context) => const ProfileEdit(),
         '/profile_notifications': (context) => const ProfileNotifications(),
         '/profile_change_password': (context) => const ProfileChangePassword(),
+        '/notifications': (context) => const Notifications(),
       },
     );
   }

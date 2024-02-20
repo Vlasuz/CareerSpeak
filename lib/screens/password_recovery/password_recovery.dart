@@ -42,7 +42,7 @@ class _PasswordRecoveryState extends State<PasswordRecovery> {
                     ),
                     Input(
                       placeholder: 'Пароль',
-                      icon: SvgPicture.asset('assets/images/lock.svg'),
+                      icon: SvgPicture.asset('assets/images/lock_orange.svg'),
                       isPassword: true,
                       setValue: (value) {
                         setState(() {
@@ -53,7 +53,7 @@ class _PasswordRecoveryState extends State<PasswordRecovery> {
                     SizedBox(height: 14.0,),
                     Input(
                       placeholder: 'Пароль ще раз',
-                      icon: SvgPicture.asset('assets/images/lock.svg'),
+                      icon: SvgPicture.asset('assets/images/lock_orange.svg'),
                       isPassword: true,
                       setValue: (value) {
                         setState(() {

@@ -16,7 +16,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
   void _onItemTapped(int index) {
     switch (index) {
       case 0:
-        Navigator.pushNamed(context, '/login');
+        Navigator.pushNamed(context, '/education');
       case 1:
         Navigator.pushNamed(context, '/profile_notifications');
       case 2:
@@ -36,6 +36,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
     final bool isFavorite =
         ModalRoute.of(context)?.settings.name == '/profile_notifications';
     final bool isProfile = ModalRoute.of(context)?.settings.name == '/profile';
+    final bool isEducation = ModalRoute.of(context)?.settings.name == '/education';
 
     if (isFavorite) {
       setState(() {
@@ -44,6 +45,10 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
     } else if (isProfile) {
       setState(() {
         _selectedIndex = 3;
+      });
+    } else if (isEducation) {
+      setState(() {
+        _selectedIndex = 0;
       });
     }
 

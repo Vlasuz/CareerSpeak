@@ -23,6 +23,15 @@ class ProfessionList {
   ProfessionList({required this.title, required this.image});
 }
 
+class NotificationList {
+  final String title;
+  final String createdAt;
+  final String message;
+  final bool isNew;
+
+  NotificationList({required this.title, required this.createdAt, required this.isNew, required this.message});
+}
+
 class LevelList {
   final String title;
 
