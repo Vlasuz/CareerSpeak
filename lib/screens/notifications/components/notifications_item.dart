@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 class NotificationsItem extends StatefulWidget {
   const NotificationsItem({Key? key, required this.itemData}) : super(key: key);
 
-  final NotificationList itemData;
+  final NotificationsList itemData;
 
   @override
   State<NotificationsItem> createState() => _NotificationsItemState();

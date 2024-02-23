@@ -2,7 +2,7 @@ import 'package:career_speak/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-void NotificationsModal(BuildContext context, NotificationList itemData) {
+void NotificationsModal(BuildContext context, NotificationsList itemData) {
   showModalBottomSheet(
     context: context,
     backgroundColor: Colors.transparent,

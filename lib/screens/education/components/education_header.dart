@@ -1,4 +1,5 @@
 import 'package:career_speak/constants.dart';
+import 'package:career_speak/screens/education/components/education_languages.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:percent_indicator/percent_indicator.dart';
@@ -35,12 +36,32 @@ class _EducationHeaderState extends State<EducationHeader> {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        'Польська',
-                        style: TextStyle(
-                          color: Color(0xFF3A89FD),
-                          fontSize: 22.0,
-                          fontWeight: FontWeight.w600,
+                      TextButton(
+                        style: ButtonStyle(
+                          padding: MaterialStateProperty.all(
+                              EdgeInsets.symmetric(vertical: 0.0, horizontal: 0)),
+                          minimumSize: MaterialStateProperty.all(Size(0, 0)),
+                          visualDensity: VisualDensity.compact,
+                          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                          overlayColor: MaterialStateProperty.all(Colors.transparent),
+                        ),
+                        onPressed: () {
+                          EducationLanguages(context);
+                        },
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Польська',
+                              style: TextStyle(
+                                color: Color(0xFF3A89FD),
+                                fontSize: 22.0,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                            SizedBox(width: 9.0,),
+                            SvgPicture.asset('assets/images/arrow_down_blue_mini.svg')
+                          ],
                         ),
                       ),
                       SizedBox(

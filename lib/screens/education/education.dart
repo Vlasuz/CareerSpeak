@@ -5,6 +5,7 @@ import 'package:career_speak/screens/education/components/education_header.dart'
 import 'package:career_speak/screens/education/components/education_item.dart';
 import 'package:career_speak/screens/profile/components/profile_subscription.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Education extends StatefulWidget {
@@ -28,7 +29,7 @@ class _EducationState extends State<Education> {
                 physics: AlwaysScrollableScrollPhysics(),
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                  child: const Column(
+                  child: Column(
                     children: [
                       SizedBox(
                         height: 16.0,

@@ -15,21 +15,30 @@ class LanguagesList {
 
   LanguagesList({required this.title, required this.icon});
 }
+class UserLanguagesList {
+  final String title;
+  final String profession;
+  final String level;
+  final Image icon;
+  final bool isActive;
 
-class ProfessionList {
+  UserLanguagesList({required this.title, required this.isActive, required this.level, required this.profession, required this.icon});
+}
+
+class ProfessionsList {
   final String title;
   final Image image;
 
-  ProfessionList({required this.title, required this.image});
+  ProfessionsList({required this.title, required this.image});
 }
 
-class NotificationList {
+class NotificationsList {
   final String title;
   final String createdAt;
   final String message;
   final bool isNew;
 
-  NotificationList({required this.title, required this.createdAt, required this.isNew, required this.message});
+  NotificationsList({required this.title, required this.createdAt, required this.isNew, required this.message});
 }
 
 class LevelList {

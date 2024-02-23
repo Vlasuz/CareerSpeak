@@ -58,7 +58,6 @@ void ForgotPasswordSuccess(BuildContext context, String inputValue) {
               color: cOrange,
               child: TextButton(
                 onPressed: () {
-                  // Navigator.pop(context);
                   Navigator.pushNamed(context, '/password_recovery');
                 },
                 style: ButtonStyle(
