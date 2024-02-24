@@ -8,6 +8,14 @@ import 'package:career_speak/screens/profile/components/profile_change_password.
 import 'package:career_speak/screens/profile/components/profile_edit.dart';
 import 'package:career_speak/screens/profile/components/profile_notifications.dart';
 import 'package:career_speak/screens/profile/profile.dart';
+import 'package:career_speak/screens/quest/inner/quest_images.dart';
+import 'package:career_speak/screens/quest/inner/quest_text.dart';
+import 'package:career_speak/screens/quest/inner/quest_translate.dart';
+import 'package:career_speak/screens/quest/inner/quest_true_false.dart';
+import 'package:career_speak/screens/quest/inner/quest_word.dart';
+import 'package:career_speak/screens/quest/inner/quest_words_order.dart';
+import 'package:career_speak/screens/quest/inner/quest_write.dart';
+import 'package:career_speak/screens/quest/quest.dart';
 import 'package:career_speak/screens/registration_info/registration_info.dart';
 import 'package:career_speak/screens/registration_language/registration_language.dart';
 import 'package:career_speak/screens/registration_profession/registration_profession.dart';
@@ -45,6 +53,14 @@ class _MainScreenState extends State<MainScreen> {
         '/profile_notifications': (context) => const ProfileNotifications(),
         '/profile_change_password': (context) => const ProfileChangePassword(),
         '/notifications': (context) => const Notifications(),
+        '/quest': (context) => const Quest(),
+        '/quest/word': (context) => const QuestWord(),
+        '/quest/translate': (context) => const QuestTranslate(),
+        '/quest/true_false': (context) => const QuestTrueFalse(),
+        '/quest/words_order': (context) => const QuestWordsOrder(),
+        '/quest/images': (context) => const QuestImages(),
+        '/quest/write': (context) => const QuestWrite(),
+        '/quest/text': (context) => const QuestText(),
       },
     );
   }

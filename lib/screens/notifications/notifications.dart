@@ -36,11 +36,16 @@ class _NotificationsState extends State<Notifications> {
                         color: Color(0xFF282828),
                       ),
                     ),
-                    SvgPicture.asset(
-                      'assets/images/cross_black.svg',
-                      width: 14.0,
-                      height: 14.0,
-                    ),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pop(context);
+                      },
+                      child: SvgPicture.asset(
+                        'assets/images/cross_black.svg',
+                        width: 14.0,
+                        height: 14.0,
+                      ),
+                    )
                   ],
                 ),
               ),
