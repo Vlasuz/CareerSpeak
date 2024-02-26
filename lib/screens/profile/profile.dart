@@ -4,6 +4,7 @@ import 'package:career_speak/screens/profile/components/profile_header.dart';
 import 'package:career_speak/screens/profile/components/profile_legal_information.dart';
 import 'package:career_speak/screens/profile/components/profile_settings.dart';
 import 'package:career_speak/screens/profile/components/profile_subscription.dart';
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
 class Profile extends StatefulWidget {
@@ -14,17 +15,26 @@ class Profile extends StatefulWidget {
 }
 
 class _ProfileState extends State<Profile> {
+  int touchedIndex = -1;
+
   @override
   Widget build(BuildContext context) {
     return Background(
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           ProfileHeader(),
-          SizedBox(height: 16.0,),
+          SizedBox(
+            height: 16.0,
+          ),
           ProfileSubscription(),
-          SizedBox(height: 8.0,),
+          SizedBox(
+            height: 8.0,
+          ),
           ProfileSettings(),
-          SizedBox(height: 32.0,),
+          SizedBox(
+            height: 32.0,
+          ),
           Row(
             children: [
               TextButton(
@@ -57,7 +67,9 @@ class _ProfileState extends State<Profile> {
               ),
             ],
           ),
-          SizedBox(height: 32.0,),
+          SizedBox(
+            height: 32.0,
+          ),
         ],
       ),
     );

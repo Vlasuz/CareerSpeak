@@ -1,4 +1,6 @@
+import 'package:career_speak/screens/app_offline/app_offline.dart';
 import 'package:career_speak/screens/education/education.dart';
+import 'package:career_speak/screens/favorite/favorite.dart';
 import 'package:career_speak/screens/forgot_password/forgot_password.dart';
 import 'package:career_speak/screens/login/login.dart';
 import 'package:career_speak/screens/login_phone/login_phone.dart';
@@ -48,6 +50,7 @@ class _MainScreenState extends State<MainScreen> {
         '/registration_profession': (context) => const RegistrationProfession(),
         '/registration_schedule': (context) => const RegistrationSchedule(),
         '/education': (context) => const Education(),
+        '/favorite': (context) => const Favorite(),
         '/profile': (context) => const Profile(),
         '/profile_edit': (context) => const ProfileEdit(),
         '/profile_notifications': (context) => const ProfileNotifications(),
@@ -61,6 +64,8 @@ class _MainScreenState extends State<MainScreen> {
         '/quest/images': (context) => const QuestImages(),
         '/quest/write': (context) => const QuestWrite(),
         '/quest/text': (context) => const QuestText(),
+
+        '/offline': (context) => const AppOffline(),
       },
     );
   }

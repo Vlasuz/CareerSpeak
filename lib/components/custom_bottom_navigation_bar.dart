@@ -18,7 +18,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
       case 0:
         Navigator.pushNamed(context, '/education');
       case 1:
-        Navigator.pushNamed(context, '/profile_notifications');
+        Navigator.pushNamed(context, '/favorite');
       case 2:
         Navigator.pushNamed(context, '/profile_notifications');
       case 3:
@@ -33,22 +33,21 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
   @override
   Widget build(BuildContext context) {
 
-    final bool isFavorite =
-        ModalRoute.of(context)?.settings.name == '/profile_notifications';
+    final bool isFavorite = ModalRoute.of(context)?.settings.name == '/favorite';
     final bool isProfile = ModalRoute.of(context)?.settings.name == '/profile';
     final bool isEducation = ModalRoute.of(context)?.settings.name == '/education';
 
-    if (isFavorite) {
+    if (isEducation) {
+      setState(() {
+        _selectedIndex = 0;
+      });
+    } else if (isFavorite) {
       setState(() {
         _selectedIndex = 1;
       });
     } else if (isProfile) {
       setState(() {
         _selectedIndex = 3;
-      });
-    } else if (isEducation) {
-      setState(() {
-        _selectedIndex = 0;
       });
     }
 

@@ -39,6 +39,7 @@ dependencies:
   blur: ^3.0.0
   flutter_slidable: ^3.0.1
   video_player: ^2.2.13
+  fl_chart: ^0.41.0
 
 
 
